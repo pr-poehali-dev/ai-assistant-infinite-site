@@ -1,0 +1,32 @@
+{
+  "tests": [
+    {
+      "name": "Test AI chat with valid message",
+      "method": "POST",
+      "path": "/",
+      "body": {
+        "message": "Привет! Как дела?",
+        "history": []
+      },
+      "expectedStatus": 200,
+      "expectedBody": {
+        "message": "string",
+        "timestamp": "string"
+      },
+      "bodyMatcher": "partial"
+    },
+    {
+      "name": "Test AI chat with empty message",
+      "method": "POST",
+      "path": "/",
+      "body": {
+        "message": "",
+        "history": []
+      },
+      "expectedStatus": 400,
+      "expectedBody": {
+        "error": "Message is required"
+      }
+    }
+  ]
+}
