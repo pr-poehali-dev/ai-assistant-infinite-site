@@ -17,7 +17,7 @@ export default function Index() {
   const [messages, setMessages] = useState<Message[]>([
     {
       role: 'assistant',
-      content: 'Привет! Я ваш умный ИИ-ассистент. Готов помочь с любыми вопросами! 🚀',
+      content: 'Привет! Я LitvinovGPT — ваш самый умный ИИ-ассистент. Готов помочь с любыми вопросами! 🚀',
       timestamp: new Date()
     }
   ]);
@@ -89,7 +89,7 @@ export default function Index() {
   ];
 
   const faqs = [
-    { q: 'Что умеет ИИ-ассистент?', a: 'Я могу отвечать на вопросы, помогать с задачами, генерировать контент, объяснять сложные темы, писать код и многое другое!' },
+    { q: 'Что умеет LitvinovGPT?', a: 'LitvinovGPT — это мощный ИИ на базе GPT-4, который может отвечать на любые вопросы, помогать с задачами, генерировать контент, объяснять сложные темы, писать и анализировать код, создавать тексты и многое другое!' },
     { q: 'Как начать работу?', a: 'Просто перейдите во вкладку "Чат" и задайте любой вопрос. Я мгновенно отвечу!' },
     { q: 'Безопасны ли мои данные?', a: 'Да! Все данные защищены и обрабатываются конфиденциально.' },
     { q: 'Можно ли использовать на мобильных?', a: 'Конечно! Сайт полностью адаптивен для всех устройств.' },
@@ -104,7 +104,7 @@ export default function Index() {
             <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary via-secondary to-accent flex items-center justify-center animate-gradient bg-[length:200%_200%]">
               <Icon name="Sparkles" className="text-white" size={20} />
             </div>
-            <span className="text-2xl font-bold gradient-text">AI Assistant</span>
+            <span className="text-2xl font-bold gradient-text">LitvinovGPT</span>
           </div>
           
           <div className="hidden md:flex gap-6">
@@ -140,7 +140,7 @@ export default function Index() {
             <div className="mb-8 relative">
               <div className="absolute inset-0 bg-gradient-to-r from-primary via-secondary to-accent blur-3xl opacity-30 animate-glow" />
               <h1 className="text-6xl md:text-8xl font-bold gradient-text mb-4 relative">
-                AI Assistant
+                LitvinovGPT
               </h1>
             </div>
             
@@ -194,7 +194,7 @@ export default function Index() {
               <div className="p-6 border-b border-border">
                 <h2 className="text-2xl font-bold gradient-text flex items-center gap-2">
                   <Icon name="Bot" size={28} />
-                  Чат с ИИ-ассистентом
+                  Чат с LitvinovGPT
                 </h2>
               </div>
 
@@ -419,7 +419,7 @@ export default function Index() {
 
       <footer className="border-t border-border mt-20 py-8">
         <div className="container mx-auto px-4 text-center text-muted-foreground">
-          <p className="mb-2">© 2026 AI Assistant. Работает на основе передовых технологий ИИ</p>
+          <p className="mb-2">© 2026 LitvinovGPT. Работает на основе OpenAI GPT-4</p>
           <div className="flex items-center justify-center gap-4">
             <Icon name="Sparkles" className="text-primary" size={16} />
             <span className="text-sm">Создано с использованием React, TypeScript и любви к инновациям</span>
